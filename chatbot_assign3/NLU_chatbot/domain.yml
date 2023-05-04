@@ -1,0 +1,530 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq_company
+  - company_desc_facebook
+  - ceo_facebook
+  - founded_on_facebook
+  - founded_by_facebook
+  - headquater_facebook
+  - subsidiaries_facebook
+  - company_desc_google
+  - ceo_google
+  - founded_on_google
+  - founded_by_google
+  - headquater_google
+  - subsidiaries_google
+  - approve
+  - company_desc_Droll_Yankees
+  - ceo_Droll_Yankees
+  - founded_on_Droll_Yankees
+  - founded_by_Droll_Yankees
+  - headquater_Droll_Yankees
+  - subsidiaries_Droll_Yankees
+  - company_desc_Carbon_Care_Asia
+  - ceo_Carbon_Care_Asia
+  - founded_on_Carbon_Care_Asia
+  - founded_by_Carbon_Care_Asia
+  - headquater_Carbon_Care_Asia
+  - subsidiaries_Carbon_Care_Asia
+  - company_desc_Mozilla
+  - ceo_Mozilla
+  - founded_on_Mozilla
+  - founded_by_Mozilla
+  - headquater_Mozilla
+  - subsidiaries_Mozilla
+  - company_desc_compaq_computer_corporation
+  - ceo_compaq_computer_corporation
+  - founded_on_compaq_computer_corporation
+  - founded_by_compaq_computer_corporation
+  - headquater_compaq_computer_corporation
+  - subsidiaries_compaq_computer_corporation
+  - company_desc_Genmar_Holdings 
+  - ceo_Genmar_Holdings 
+  - founded_on_Genmar_Holdings 
+  - founded_by_Genmar_Holdings 
+  - headquater_Genmar_Holdings 
+  - subsidiaries_Genmar_Holdings
+  - company_desc_Airstream 
+  - ceo_Airstream 
+  - founded_on_Airstream 
+  - founded_by_Airstream 
+  - headquater_Airstream 
+  - subsidiaries_Airstream
+  - company_desc_New_Beginning_Adoption_Agency 
+  - ceo_New_Beginning_Adoption_Agency 
+  - founded_on_New_Beginning_Adoption_Agency 
+  - founded_by_New_Beginning_Adoption_Agency 
+  - headquater_New_Beginning_Adoption_Agency 
+  - subsidiaries_New_Beginning_Adoption_Agency 
+  - company_desc_aim_your_way
+  - ceo_aim_your_way
+  - founded_on_aim_your_way
+  - founded_by_aim_your_way
+  - headquater_aim_your_way
+  - subsidiaries_aim_your_way
+  - company_desc_safaricom
+  - ceo_safaricom
+  - founded_on_safaricom
+  - founded_by_safaricom
+  - headquater_safaricom
+  - subsidiaries_safaricom
+  - company_desc_uniGroup
+  - ceo_uniGroup
+  - founded_on_uniGroup
+  - founded_by_uniGroup
+  - headquater_uniGroup
+  - subsidiaries_uniGroup
+  - company_desc_coyote_logistics
+  - ceo_coyote_logistics
+  - founded_on_coyote_logistics
+  - founded_by_coyote_logistics
+  - headquater_coyote_logistics
+  - subsidiaries_coyote_logistics
+  - company_desc_quickie_manufacturing_corporation
+  - ceo_quickie_manufacturing_corporation
+  - founded_on_quickie_manufacturing_corporation
+  - founded_by_quickie_manufacturing_corporation
+  - headquater_quickie_manufacturing_corporation
+  - subsidiaries_quickie_manufacturing_corporation
+  - company_desc_Yahoo
+  - ceo_Yahoo
+  - founded_on_Yahoo
+  - founded_by_Yahoo
+  - headquater_Yahoo
+  - subsidiaries_Yahoo
+  - company_desc_Walmart
+  - ceo_Walmart
+  - founded_on_Walmart
+  - founded_by_Walmart
+  - headquater_Walmart
+  - subsidiaries_Walmart
+  - company_desc_Flipkart
+  - ceo_Flipkart
+  - founded_on_Flipkart
+  - founded_by_Flipkart
+  - headquater_Flipkart
+  - subsidiaries_Flipkart
+  - company_desc_Amazon
+  - ceo_Amazon
+  - founded_on_Amazon
+  - founded_by_Amazon
+  - headquater_Amazon
+  - subsidiaries_Amazon
+  - company_desc_IBM
+  - ceo_IBM
+  - founded_on_IBM
+  - founded_by_IBM
+  - headquater_IBM
+  - subsidiaries_IBM
+  - company_desc_tcs_company
+  - ceo_tcs_company
+  - founded_on_tcs_company
+  - founded_by_tcs_company
+  - headquater_tcs_company
+  - subsidiaries_tcs_company
+
+
+responses:
+  utter_greet:
+  - text: " I am a chat bot... I have information about safaricom,facebook,google,Droll_Yankees,quickie manufacturing corporation,coyote logistics,uniGroup,aim your way,New Beginning Adoption Agency,Airstream, Genmar Holdings, compaq computer corporation,Carbon Care Asia, Flipkart,Amazon, Walmart, Yahoo, tcs company,IBM. how may I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq_comapny:
+  - text: "What do you want to know?"
+
+  utter_description_facebook:
+  - text: "Meta Platforms, Inc., doing business as Meta and formerly known as Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California."
+
+  utter_ceo_facebook:
+  - text: "Mark Zuckerberg "
+
+  utter_founded_on_facebook:
+  - text: "February 2004"
+
+  utter_founded_by_facebook:
+  - text: "Mark Zuckerberg"
+
+  utter_headquater_facebook:
+  - text: "Menlo Park, California, United States"
+
+  utter_subsidiaries_facebook:
+  - text: "Subsidiaries: PrivateCore, WhatsApp, Oculus VR, MORE"
+
+  utter_continue:
+  - text: "Do you want to continue - say yes or no"
+
+  utter_description_google:
+  - text: "Google is an internet search engine. It uses a proprietary algorithm that's designed to retrieve and order search results to provide the most relevant and dependable sources of data possible."
+
+  utter_ceo_google:
+  - text: "Sundar Pichai"
+
+  utter_founded_on_google:
+  - text: "4 September 1998"
+
+  utter_founded_by_google:
+  - text: "Larry Page and Sergy Brin"
+
+  utter_headquater_google:
+  - text: "Mountain View, California, United States"
+
+  utter_subsidiaries_google:
+  - text: "YouTube, Dialogflow, Kaggle, Google AdMob, Looker, MORE"
+
+
+  utter_description_Mozilla:
+  - text: "coordinates and integrates the development of Internet-related applications such as the Firefox web browser, by a global community of open-source developers, some of whom are employed by the corporation itself."
+
+  utter_ceo_Mozilla:
+  - text: "Mitchell Baker"
+
+  utter_founded_on_Mozilla:
+  - text: "2005"
+
+  utter_founded_by_Mozilla:
+  - text: "John Lily"
+
+  utter_headquater_Mozilla:
+  - text: "Mountain View, California, United States"
+
+  utter_subsidiaries_Mozilla:
+  - text: "Mozilla Corporation Beijing Mozilla Online Ltd MZLA Technologies Corporation"
+
+  utter_description_compaq_computer_corporation:
+  - text: "Compaq Computer Corporation (sometimes abbreviated to CQ prior to a 2007 rebranding) was an American information technology company founded in 1982 that developed, sold, and supported computers and related products and services."
+
+  utter_ceo_compaq_computer_corporation:
+  - text: "Michael David Capellas"
+
+  utter_founded_on_compaq_computer_corporation:
+  - text: "1982"
+
+  utter_founded_by_compaq_computer_corporation:
+  - text: "Rod Canion,Jim Harris,Bill Murto"
+
+  utter_headquater_compaq_computer_corporation:
+  - text: "Palo Alto, California, United States"
+
+  utter_subsidiaries_compaq_computer_corporation:
+  - text: " Data not found"
+
+  utter_description_Genmar_Holdings :
+  - text: "was the second largest manufacturer of recreational motor boats.n 2009, the company filed for Chapter 11 Bankruptcy."
+
+  utter_ceo_Genmar_Holdings :
+  - text: "Irwin Jacobs"
+
+  utter_founded_on_Genmar_Holdings :
+  - text: "1978"
+
+  utter_founded_by_Genmar_Holdings :
+  - text: "Irwin Jacobs"
+
+  utter_headquater_Genmar_Holdings :
+  - text: "Minneapolis, Michigan"
+
+  utter_subsidiaries_Genmar_Holdings:
+  - text: " Data not found"
+
+  utter_description_Carbon_Care_Asia:
+  - text: "a social business in carbon strategy and sustainability innovation."
+
+  utter_ceo_Carbon_Care_Asia:
+  - text: "Albert Lai"
+
+  utter_founded_on_Carbon_Care_Asia:
+  - text: "2008"
+
+  utter_founded_by_Carbon_Care_Asia:
+  - text: "Mr Chong Chan Yau"
+
+  utter_headquater_Carbon_Care_Asia:
+  - text: "Hong Kong, China"
+
+  utter_subsidiaries_Carbon_Care_Asia:
+  - text: " Data not found"
+
+  utter_description_DY:
+  - text: "Yankees bird feeders have always been the standard in bird feeding since our invention of the tube feeder in 1969"
+
+  utter_ceo_Droll_Yankees:
+  - text: "Bob Donegan"
+
+  utter_founded_on_Droll_Yankees:
+  - text: "1960"
+
+  utter_founded_by_Droll_Yankees:
+  - text: "Peter Kilham"
+
+  utter_headquater_Droll_Yankees:
+  - text: "Connecticut, United States"
+
+  utter_subsidiaries_Droll_Yankees:
+  - text: " Data not found"
+
+  utter_description_Airstream:
+  - text: "Airstream's silver-bullet travel trailers have been streaming down the nation's ribbons of highways for more than 75 years and have become as common and well-loved in the culture of America as blue jeans and tees. Founder Wally Byam began the enterprise in the 1920s by selling plans for building trailers, which led to the design and launch of The Clipper in the early 1930s. The company makes travel trailers primarily, but also produces its Interstate touring coach with full amenities. "
+
+  utter_ceo_Airstream:
+  - text: "Bob Wheeler"
+
+  utter_founded_on_Airstream:
+  - text: "1920"
+
+  utter_founded_by_Airstream:
+  - text: "Wally Byam"
+
+  utter_headquater_Airstream:
+  - text: "Data not found"
+
+  utter_subsidiaries_Airstream:
+  - text: " Data not found"
+
+
+  utter_description_New_Beginning_Adoption_Agency:
+  - text: "New Beginning Adoption Agency is a fully licensed, non-profit adoption agency providing services to Idaho families. FREE & Confidential crisis pregnancy services are also provided to Idaho residents. Our Wellness center is staffed with professional counselors to help families and birth families throughout their journeys."
+
+  utter_ceo_New_Beginning_Adoption_Agency:
+  - text: "Stephanie Pearl"
+
+  utter_founded_on_New_Beginning_Adoption_Agency:
+  - text: "2004"
+
+  utter_founded_by_New_Beginning_Adoption_Agency:
+  - text: "Stephanie Pearl"
+
+  utter_headquater_New_Beginning_Adoption_Agency:
+  - text: "Data not found"
+
+  utter_subsidiaries_New_Beginning_Adoption_Agency:
+  - text: " Data not found"
+
+  utter_description_coyote_logistics:
+  - text: "Coyote Logistics is a leading global third-party logistics provider that matches more than 10,000 shipments every day. Founded in 2006, Coyote was created with one goal in mind: create a better service experience in the transportation industry."
+
+  utter_ceo_coyote_logistics:
+  - text: "Jeffrey Silver"
+
+  utter_founded_on_coyote_logistics:
+  - text: "2006"
+
+  utter_founded_by_coyote_logistics:
+  - text: "Jeffrey Silver"
+
+  utter_headquater_coyote_logistics:
+  - text: "Chicago, Illinois, United States"
+
+  utter_subsidiaries_coyote_logistics:
+  - text: " Data not found"
+
+  utter_description_uniGroup:
+  - text: "UniGroup, founded in 1988, is a $1.7 billion transportation company and parent of United Van Lines, the nation's leading corporate mover, and Mayflower Transit, the most well-known name in the moving industry. Between the two van lines, UniGroup handles one in three professional interstate moves."
+
+  utter_ceo_uniGroup:
+  - text: "Jason Mills"
+
+  utter_founded_on_uniGroup:
+  - text: "1988"
+
+  utter_founded_by_uniGroup:
+  - text: "Data not found"
+
+  utter_headquater_uniGroup:
+  - text: "Fenton, Missouri, United States"
+
+  utter_subsidiaries_uniGroup:
+  - text: "Data not found"
+
+  utter_description_safaricom:
+  - text: "Safaricom PLC is a listed Kenyan mobile network operator headquartered at Safaricom House in Nairobi, Kenya. It is the largest telecommunications provider in Kenya, and one of the most profitable companies in the East and Central Africa region."
+
+  utter_ceo_safaricom:
+  - text: "Peter Ndegwa"
+
+  utter_founded_on_safaricom:
+  - text: "1993"
+
+  utter_founded_by_safaricom:
+  - text: "Data not found"
+
+  utter_headquater_safaricom:
+  - text: "Nairobi, Kenya"
+
+  utter_subsidiaries_safaricom:
+  - text: " Data not found"
+
+  utter_description_aim_your_way:
+  - text: "AIM Your Way, LLC-Providing Superior Property Maintenance Services. Founded in 1986, AIM Your Way, LLC (AIM) is a nationwide field services company, owned by its parent company, America's InfoMart, Inc. Our services include property inspections, pre-sale/REO property preservation and maintenance, VPR, Code Compliance and valuations."
+
+  utter_ceo_aim_your_way:
+  - text: "Mitch Schneider"
+
+  utter_founded_on_aim_your_way:
+  - text: "1986"
+
+  utter_founded_by_aim_your_way:
+  - text: "Data not found"
+
+  utter_headquater_aim_your_way:
+  - text: "Texas"
+
+  utter_subsidiaries_aim_your_way:
+  - text: " Data not found"
+
+  
+
+  utter_description_quickie_manufacturing_corporation:
+  - text: "Quickie Manufacturing Corporation, the largest manufacturer of cleaning tools in North American and a wholly-owned subsidiary of Jarden Corporation."
+
+  utter_ceo_quickie_manufacturing_corporation:
+  - text: "Michael Magerman"
+
+  utter_founded_on_quickie_manufacturing_corporation:
+  - text: "1919"
+
+  utter_founded_by_quickie_manufacturing_corporation:
+  - text: "Peter Sr."
+
+  utter_headquater_quickie_manufacturing_corporation:
+  - text: "Data not found"
+
+  utter_subsidiaries_quickie_manufacturing_corporation:
+  - text: " Data not found"
+
+
+  utter_description_tcs_company:
+  - text: "Tata Consultancy Services is a global leader in IT services, consulting & business solutions with a large network of innovation & delivery centers."
+
+  utter_ceo_tcs_company:
+  - text: "Rajesh Gopinathan"
+
+  utter_founded_on_tcs_company:
+  - text: "1968"
+
+  utter_founded_by_tcs_company:
+  - text: "J R D Tata"
+
+  utter_headquater_tcs_company:
+  - text: "Mumbai"
+  
+  utter_subsidiaries_tcs_company:
+  - text: "Digitate, Diligenta Limited, MahaOnline Limited, MORE"
+
+  utter_description_IBM:
+  - text: "This company believes in discovering, designing and developing advanced information technology, and translating that into value for their clients through consulting services ·"
+
+  utter_ceo_IBM:
+  - text: "Arvind Krishna"
+
+  utter_founded_on_IBM:
+  - text: "16 th June , 1911"
+
+  utter_founded_by_IBM:
+  - text: " Charles Ranlett Flint"
+
+  utter_headquater_IBM:
+  - text: "Armonk, New York, United States"
+  
+  utter_subsidiaries_IBM:
+  - text: "Red Hat Software, SoftLayer, Aspera, FileNet and more"
+
+  utter_description_Amazon:
+  - text: " Amazon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Amazon strives to be Earth’s most customer-centric company, Earth’s best employer, and Earth’s safest place to work. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by Amazon, AWS, Kindle Direct Publishing, Kindle, Career Choice, Fire tablets, Fire TV, Amazon Echo, Alexa, Just Walk Out technology, Amazon Studios, and The Climate Pledge are some of the things pioneered by Amazon."
+
+  utter_ceo_Amazon:
+  - text: "Andy Jassy"
+
+  utter_founded_on_Amazon:
+  - text: "5 July 1994, Bellevue, Washington, United States"
+
+  utter_founded_by_Amazon:
+  - text: " Jeff Bezos"
+
+  utter_headquater_Amazon:
+  - text: "Seattle, Washington, United States"
+  
+  utter_subsidiaries_Amazon:
+  - text: "Zappos, Audible, Whole Foods Market, Ring, Souq"
+
+  utter_description_Flipkart:
+  - text: "Flipkart is an Indian e-commerce company,the company initially focused on online book sales before expanding into other product categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products."
+
+  utter_ceo_Flipkart:
+  - text: "Kalyan Krishnamurthy"
+
+  utter_founded_on_Flipkart:
+  - text: "2007"
+  
+  utter_founded_by_Flipkart:
+  - text: " Binny Bansal, Sachin Bansal"
+
+  utter_headquater_Flipkart:
+  - text: "Bangalore, Karnataka"
+  
+  utter_subsidiaries_Flipkart:
+  - text: "Myntra, PhonePe, Ekart, Mallers, Inc., MORE"
+
+  utter_description_Walmart:
+  - text: "Walmart Inc. is an American multinational retail corporation that operates a chain of hypermarkets, discount department stores, and grocery stores."
+
+  utter_ceo_Walmart:
+  - text: "Doug McMillon "
+
+  utter_founded_on_Walmart:
+  - text: "2 July 1962"
+  
+  utter_founded_by_Walmart:
+  - text: " Sam Walton"
+
+  utter_headquater_Walmart:
+  - text: "Bentonville, Arkansas, United States"
+  
+  utter_subsidiaries_Walmart:
+  - text: "Sam's Club, Walmart Canada, Bodega Aurrerá, MORE"
+
+  utter_description_Yahoo:
+  - text: "Yahoo is an American web services provider.It provides a web portal, search engine Yahoo Search, and related services, including My Yahoo!, Yahoo Mail, Yahoo News, Yahoo Finance, Yahoo Sports and its advertising platform, Yahoo! Native."
+  
+  utter_ceo_Yahoo:
+  - text: "Jim Lanzone "
+
+  utter_founded_on_Yahoo:
+  - text: "January 1994"
+  
+  utter_founded_by_Yahoo:
+  - text: "Jerry Yang, David Filo"
+
+  utter_headquater_Yahoo:
+  - text: "Sunnyvale, California, United States"
+  
+  utter_subsidiaries_Yahoo:
+  - text: " Yahoo India Private Ltd, Yahoo! France SAS, Flurry, MORE"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

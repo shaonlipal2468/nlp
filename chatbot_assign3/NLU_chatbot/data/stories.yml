@@ -1,0 +1,423 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: company faq
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+
+- story: facebook 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_facebook
+  - action: utter_description_facebook
+  - intent: ceo_facebook
+  - action: utter_ceo_facebook
+  - intent: founded_on_facebook
+  - action: utter_founded_on_facebook
+  - intent: founded_by_facebook
+  - action: utter_founded_by_facebook
+  - intent: headquater_facebook
+  - action: utter_headquater_facebook
+  - intent: subsidiaries_facebook
+  - action: utter_subsidiaries_facebook
+
+  
+- story: google 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_google
+  - action: utter_description_google
+  - intent: ceo_google
+  - action: utter_ceo_google
+  - intent: founded_on_google
+  - action: utter_founded_on_google
+  - intent: founded_by_google
+  - action: utter_founded_by_google
+  - intent: headquater_google
+  - action: utter_headquater_google
+  - intent: subsidiaries_google
+  - action: utter_subsidiaries_google
+
+- story: Carbon Care Asia
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Carbon_Care_Asia
+  - action: utter_description_Carbon_Care_Asia
+  - intent: ceo_Carbon_Care_Asia
+  - action: utter_ceo_Carbon_Care_Asia
+  - intent: founded_on_Carbon_Care_Asia
+  - action: utter_founded_on_Carbon_Care_Asia
+  - intent: founded_by_Carbon_Care_Asia
+  - action: utter_founded_by_Carbon_Care_Asia
+  - intent: headquater_Carbon_Care_Asia
+  - action: utter_headquater_Carbon_Care_Asia
+  - intent: subsidiaries_Carbon_Care_Asia
+  - action: utter_subsidiaries_Carbon_Care_Asia
+
+
+- story: Droll Yankees 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Droll_Yankees
+  - action: utter_description_DY
+  - intent: ceo_Droll_Yankees
+  - action: utter_ceo_Droll_Yankees
+  - intent: founded_on_Droll_Yankees
+  - action: utter_founded_on_Droll_Yankees
+  - intent: founded_by_Droll_Yankees
+  - action: utter_founded_by_Droll_Yankees
+  - intent: headquater_Droll_Yankees
+  - action: utter_headquater_Droll_Yankees
+  - intent: subsidiaries_Droll_Yankees
+  - action: utter_subsidiaries_Droll_Yankees
+
+
+- story: Mozilla 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Mozilla
+  - action: utter_description_Mozilla
+  - intent: ceo_Mozilla
+  - action: utter_ceo_Mozilla
+  - intent: founded_on_Mozilla
+  - action: utter_founded_on_Mozilla
+  - intent: founded_by_Mozilla
+  - action: utter_founded_by_Mozilla
+  - intent: headquater_Mozilla
+  - action: utter_headquater_Mozilla
+  - intent: subsidiaries_Mozilla
+  - action: utter_subsidiaries_Mozilla
+
+
+- story: compaq computer corporation 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_compaq_computer_corporation
+  - action: utter_description_compaq_computer_corporation
+  - intent: ceo_compaq_computer_corporation
+  - action: utter_ceo_compaq_computer_corporation
+  - intent: founded_on_compaq_computer_corporation
+  - action: utter_founded_on_compaq_computer_corporation
+  - intent: founded_by_compaq_computer_corporation
+  - action: utter_founded_by_compaq_computer_corporation
+  - intent: headquater_compaq_computer_corporation
+  - action: utter_headquater_compaq_computer_corporation
+  - intent: subsidiaries_compaq_computer_corporation
+  - action: utter_subsidiaries_compaq_computer_corporation
+
+
+  
+- story: Genmar Holdings 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Genmar_Holdings
+  - action: utter_description_Genmar_Holdings
+  - intent: ceo_Genmar_Holdings
+  - action: utter_ceo_Genmar_Holdings
+  - intent: founded_on_Genmar_Holdings
+  - action: utter_founded_on_Genmar_Holdings
+  - intent: founded_by_Genmar_Holdings
+  - action: utter_founded_by_Genmar_Holdings
+  - intent: headquater_Genmar_Holdings
+  - action: utter_headquater_Genmar_Holdings
+  - intent: subsidiaries_Genmar_Holdings
+  - action: utter_subsidiaries_Genmar_Holdings
+
+- story: Airstream
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Airstream
+  - action: utter_description_Airstream
+  - intent: ceo_Airstream
+  - action: utter_ceo_Airstream
+  - intent: founded_on_Airstream
+  - action: utter_founded_on_Airstream
+  - intent: founded_by_Airstream
+  - action: utter_founded_by_Airstream
+  - intent: headquater_Airstream
+  - action: utter_headquater_Airstream
+  - intent: subsidiaries_Airstream
+  - action: utter_subsidiaries_Airstream
+
+- story: New Beginning Adoption Agency
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_New_Beginning_Adoption_Agency
+  - action: utter_description_New_Beginning_Adoption_Agency
+  - intent: ceo_New_Beginning_Adoption_Agency
+  - action: utter_ceo_New_Beginning_Adoption_Agency
+  - intent: founded_on_New_Beginning_Adoption_Agency
+  - action: utter_founded_on_New_Beginning_Adoption_Agency
+  - intent: founded_by_New_Beginning_Adoption_Agency
+  - action: utter_founded_by_New_Beginning_Adoption_Agency
+  - intent: headquater_New_Beginning_Adoption_Agency
+  - action: utter_headquater_New_Beginning_Adoption_Agency
+  - intent: subsidiaries_New_Beginning_Adoption_Agency
+  - action: utter_subsidiaries_New_Beginning_Adoption_Agency
+
+- story: Coyote Logistics
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_coyote_logistics
+  - action: utter_description_coyote_logistics
+  - intent: ceo_coyote_logistics
+  - action: utter_ceo_coyote_logistics
+  - intent: founded_on_coyote_logistics
+  - action: utter_founded_on_coyote_logistics
+  - intent: founded_by_coyote_logistics
+  - action: utter_founded_by_coyote_logistics
+  - intent: headquater_coyote_logistics
+  - action: utter_headquater_coyote_logistics
+  - intent: subsidiaries_coyote_logistics
+  - action: utter_subsidiaries_coyote_logistics
+
+- story: UniGroup
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_uniGroup
+  - action: utter_description_uniGroup
+  - intent: ceo_uniGroup
+  - action: utter_ceo_uniGroup
+  - intent: founded_on_uniGroup
+  - action: utter_founded_on_uniGroup
+  - intent: founded_by_uniGroup
+  - action: utter_founded_by_uniGroup
+  - intent: headquater_uniGroup
+  - action: utter_headquater_uniGroup
+  - intent: subsidiaries_uniGroup
+  - action: utter_subsidiaries_uniGroup
+
+- story: Safaricom
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_safaricom
+  - action: utter_description_safaricom
+  - intent: ceo_safaricom
+  - action: utter_ceo_safaricom
+  - intent: founded_on_safaricom
+  - action: utter_founded_on_safaricom
+  - intent: founded_by_safaricom
+  - action: utter_founded_by_safaricom
+  - intent: headquater_safaricom
+  - action: utter_headquater_safaricom
+  - intent: subsidiaries_safaricom
+  - action: utter_subsidiaries_safaricom
+
+- story: AIM Your Way
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_aim_your_way
+  - action: utter_description_aim_your_way
+  - intent: ceo_aim_your_way
+  - action: utter_ceo_aim_your_way
+  - intent: founded_on_aim_your_way
+  - action: utter_founded_on_aim_your_way
+  - intent: founded_by_aim_your_way
+  - action: utter_founded_by_aim_your_way
+  - intent: headquater_aim_your_way
+  - action: utter_headquater_aim_your_way
+  - intent: subsidiaries_aim_your_way
+  - action: utter_subsidiaries_aim_your_way
+
+- story: Quickie Manufacturing Corporation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_quickie_manufacturing_corporation
+  - action: utter_description_quickie_manufacturing_corporation
+  - intent: ceo_quickie_manufacturing_corporation
+  - action: utter_ceo_quickie_manufacturing_corporation
+  - intent: founded_on_quickie_manufacturing_corporation
+  - action: utter_founded_on_quickie_manufacturing_corporation
+  - intent: founded_by_quickie_manufacturing_corporation
+  - action: utter_founded_by_quickie_manufacturing_corporation
+  - intent: headquater_quickie_manufacturing_corporation
+  - action: utter_headquater_quickie_manufacturing_corporation
+  - intent: subsidiaries_quickie_manufacturing_corporation
+  - action: utter_subsidiaries_quickie_manufacturing_corporation  
+
+- story: Yahoo 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Yahoo
+  - action: utter_description_Yahoo
+  - intent: ceo_Yahoo
+  - action: utter_ceo_Yahoo
+  - intent: founded_on_Yahoo
+  - action: utter_founded_on_Yahoo
+  - intent: founded_by_Yahoo
+  - action: utter_founded_by_Yahoo
+  - intent: headquater_Yahoo
+  - action: utter_headquater_Yahoo
+  - intent: subsidiaries_Yahoo
+  - action: utter_subsidiaries_Yahoo
+
+- story: Amazon 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Amazon
+  - action: utter_description_Amazon
+  - intent: ceo_Amazon
+  - action: utter_ceo_Amazon
+  - intent: founded_on_Amazon
+  - action: utter_founded_on_Amazon
+  - intent: founded_by_Amazon
+  - action: utter_founded_by_Amazon
+  - intent: headquater_Amazon
+  - action: utter_headquater_Amazon
+  - intent: subsidiaries_Amazon
+  - action: utter_subsidiaries_Amazon
+
+- story: Walmart 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Walmart
+  - action: utter_description_Walmart
+  - intent: ceo_Walmart
+  - action: utter_ceo_Walmart
+  - intent: founded_on_Walmart
+  - action: utter_founded_on_Walmart
+  - intent: founded_by_Walmart
+  - action: utter_founded_by_Walmart
+  - intent: headquater_Walmart
+  - action: utter_headquater_Walmart
+  - intent: subsidiaries_Walmart
+  - action: utter_subsidiaries_Walmart
+
+- story: Flipkart 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_Flipkart
+  - action: utter_description_Flipkart
+  - intent: ceo_Flipkart
+  - action: utter_ceo_Flipkart
+  - intent: founded_on_Flipkart
+  - action: utter_founded_on_Flipkart
+  - intent: founded_by_Flipkart
+  - action: utter_founded_by_Flipkart
+  - intent: headquater_Flipkart
+  - action: utter_headquater_Flipkart
+  - intent: subsidiaries_Flipkart
+  - action: utter_subsidiaries_Flipkart
+
+- story: IBM 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_IBM
+  - action: utter_description_IBM
+  - intent: ceo_IBM
+  - action: utter_ceo_IBM
+  - intent: founded_on_IBM
+  - action: utter_founded_on_IBM
+  - intent: founded_by_IBM
+  - action: utter_founded_by_IBM
+  - intent: headquater_IBM
+  - action: utter_headquater_IBM
+  - intent: subsidiaries_IBM
+  - action: utter_subsidiaries_IBM
+
+- story: tcs_company 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq_company
+  - action: utter_faq_comapny
+  - intent: company_desc_tcs_company
+  - action: utter_description_tcs_company
+  - intent: ceo_tcs_company
+  - action: utter_ceo_tcs_company
+  - intent: founded_on_tcs_company
+  - action: utter_founded_on_tcs_company
+  - intent: founded_by_tcs_company
+  - action: utter_founded_by_tcs_company
+  - intent: headquater_tcs_company
+  - action: utter_headquater_tcs_company
+  - intent: subsidiaries_tcs_company
+  - action: utter_subsidiaries_tcs_company

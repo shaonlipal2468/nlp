@@ -1,0 +1,909 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: approve
+  examples: |
+    - yes
+    - ya
+    - yaa
+    - yeah
+    - continue
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: faq_company
+  examples: |
+    - I need information about a company
+    - Can I get some information on 
+    - Can you tell me something about 
+    - I need a brief information about
+    - I want to know more about
+
+- intent: company_desc_facebook
+  examples: |
+    - Description of Facebook
+    - Breief Description of Facebook
+    - Details about Facebook
+    - Description of Facebook
+    - Tell me details about Facebook
+
+- intent: ceo_facebook
+  examples: |
+    - Who is the CEO of Facebook
+    - CEO of Facebook
+    - Tell me who is the CEO of Facebook
+
+- intent: founded_on_facebook
+  examples: |
+    - Facebook was founded on
+    - When was Facebook founded
+    - When Facebook was founded
+
+- intent: founded_by_facebook
+  examples: |
+    - Who is the founder of Facebook
+    - founder of Facebook
+    - Facebook was founded by
+
+- intent: headquater_facebook
+  examples: |
+    - Headquater of Facebook
+    - Where is the headquater of Facebook
+    - location of Facebook
+    - Where is Facebook's headquater located
+    - Where is Facebook headquater 
+
+- intent: subsidiaries_facebook
+  examples: |
+    - Subsidiaries of Facebook
+    - Facebook's Subsidiaries 
+    - Tell me the Subsidiaries of Facebook
+
+- intent: company_desc_google
+  examples: |
+    - Description of Google
+    - Breief Description of Google
+    - Details about Google
+    - Description of Google
+    - Tell me details about Google
+
+- intent: ceo_google
+  examples: |
+    - Who is the CEO of Google
+    - CEO of Google
+    - Tell me who is the CEO of Google
+
+- intent: founded_on_google
+  examples: |
+    - Google was founded on
+    - When was Google founded
+    - When Google was founded
+
+- intent: founded_by_google
+  examples: |
+    - Who is the founder of Google
+    - founder of Google
+    - Google was founded by
+
+- intent: headquater_google
+  examples: |
+    - Headquater of Google
+    - Where is the headquater of Google
+    - location of Google
+    - Where is Google's headquater located
+    - Where is Google headquater 
+
+- intent: subsidiaries_google
+  examples: |
+    - Subsidiaries of Google
+    - Google's Subsidiaries 
+    - Tell me the Subsidiaries of Google
+    
+- intent: company_desc_Mozilla
+  examples: |
+    - Description of Mozilla
+    - Breief Description of Mozilla
+    - Details about Mozilla
+    - Description of Mozilla
+    - Tell me details about Mozilla
+
+- intent: ceo_Mozilla
+  examples: |
+    - Who is the CEO of Mozilla
+    - CEO of Mozilla
+    - Tell me who is the CEO of Mozilla
+
+- intent: founded_on_Mozilla
+  examples: |
+    - Mozilla was founded on
+    - When was Mozilla founded
+    - When Mozilla was founded
+
+- intent: founded_by_Mozilla
+  examples: |
+    - Who is the founder of Mozilla
+    - founder of Mozilla
+    - Mozilla was founded by
+
+- intent: headquater_Mozilla
+  examples: |
+    - Headquater of Mozilla
+    - Where is the headquater of Mozilla
+    - location of Mozilla
+    - Where is Mozilla's headquater located
+    - Where is Mozilla headquater 
+
+- intent: subsidiaries_Mozilla
+  examples: |
+    - Subsidiaries of Mozilla
+    - Mozilla's Subsidiaries 
+    - Tell me the Subsidiaries of Mozilla
+
+- intent: company_desc_Genmar_Holdings 
+  examples: |
+    - Description of Genmar Holdings 
+    - Breief Description of Genmar Holdings 
+    - Details about Genmar Holdings 
+    - Description of Genmar Holdings 
+    - Tell me details about Genmar Holdings 
+
+- intent: ceo_Genmar_Holdings 
+  examples: |
+    - Who is the CEO of Genmar Holdings 
+    - CEO of Genmar Holdings 
+    - Tell me who is the CEO of Genmar Holdings 
+
+- intent: founded_on_Genmar_Holdings 
+  examples: |
+    - Genmar Holdings  was founded on
+    - When was Genmar Holdings  founded
+    - When Genmar Holdings  was founded
+
+- intent: founded_by_Genmar_Holdings 
+  examples: |
+    - Who is the founder of Genmar Holdings 
+    - founder of Genmar Holdings 
+    - Genmar Holdings  was founded by
+
+- intent: headquater_Genmar_Holdings 
+  examples: |
+    - Headquater of Genmar Holdings 
+    - Where is the headquater of Genmar Holdings 
+    - location of Genmar Holdings 
+    - Where is Genmar Holdings 's headquater located
+    - Where is Genmar Holdings  headquater 
+
+- intent: subsidiaries_Genmar_Holdings 
+  examples: |
+    - Subsidiaries of Genmar Holdings 
+    - Genmar Holdings's Subsidiaries 
+    - Tell me the Subsidiaries of Genmar Holdings
+
+- intent: company_desc_compaq_computer_corporation
+  examples: |
+    - Description of compaq computer corporation
+    - Breief Description of compaq computer corporation
+    - Details about compaq computer corporation
+    - Description of compaq computer corporation
+    - Tell me details about compaq computer corporation
+
+- intent: ceo_compaq_computer_corporation
+  examples: |
+    - Who is the CEO of compaq computer corporation
+    - CEO of compaq computer corporation
+    - Tell me who is the CEO of compaq computer corporation
+
+- intent: founded_on_compaq_computer_corporation
+  examples: |
+    - compaq computer corporation was founded on
+    - When was compaq computer corporation founded
+    - When compaq computer corporation was founded
+
+- intent: founded_by_compaq_computer_corporation
+  examples: |
+    - Who is the founder of compaq computer corporation
+    - founder of compaq computer corporation
+    - compaq computer corporation was founded by
+
+- intent: headquater_compaq_computer_corporation
+  examples: |
+    - Headquater of compaq computer corporation
+    - Where is the headquater of compaq computer corporation
+    - location of compaq computer corporation
+    - Where is compaq computer corporation's headquater located
+    - Where is compaq computer corporation headquater 
+
+- intent: subsidiaries_compaq_computer_corporation 
+  examples: |
+    - Subsidiaries of Compaq Computer Corporation  
+    - Compaq Computer Corporation's Subsidiaries 
+    - Tell me the Subsidiaries of Compaq Computer Corporation
+
+- intent: company_desc_Droll_Yankees
+  examples: |
+    - Description of Droll Yankees
+    - Breief Description of Droll Yankees
+    - Details about Droll Yankees
+    - Description of Droll Yankees
+    - Tell me details about Droll Yankees
+
+- intent: ceo_Droll_Yankees
+  examples: |
+    - Who is the CEO of Droll Yankees
+    - CEO of Droll Yankees
+    - Tell me who is the CEO of Droll Yankees
+
+- intent: founded_on_Droll_Yankees
+  examples: |
+    - Droll Yankees was founded on
+    - When was Droll Yankees founded
+    - When Droll Yankees was founded
+
+- intent: founded_by_Droll_Yankees
+  examples: |
+    - Who is the founder of Droll Yankees
+    - founder of Droll Yankees
+    - Droll Yankees was founded by
+
+- intent: headquater_Droll_Yankees
+  examples: |
+    - Headquater of Droll Yankees
+    - Where is the headquater of Droll Yankees
+    - location of Droll Yankees
+    - Where is Droll Yankees's headquater located
+    - Where is Droll Yankees headquater 
+
+- intent: subsidiaries_Droll_Yankees
+  examples: |
+    - Subsidiaries of Droll Yankees  
+    - Droll Yankees's Subsidiaries 
+    - Tell me the Subsidiaries of Droll Yankees
+
+
+- intent: company_desc_Carbon_Care_Asia
+  examples: |
+    - Description of Carbon Care Asia
+    - Breief Description of Carbon Care Asia
+    - Details about Carbon Care Asia
+    - Description of Carbon Care Asia
+    - Tell me details about Carbon Care Asia
+
+- intent: ceo_Carbon_Care_Asia
+  examples: |
+    - Who is the CEO of Carbon Care Asia
+    - CEO of Carbon Care Asia
+    - Tell me who is the CEO of Carbon Care Asia
+
+- intent: founded_on_Carbon_Care_Asia
+  examples: |
+    - Carbon Care Asia was founded on
+    - When was Carbon Care Asia founded
+    - When Carbon Care Asia was founded
+
+- intent: founded_by_Carbon_Care_Asia
+  examples: |
+    - Who is the founder of Carbon Care Asia
+    - founder of Carbon Care Asia
+    - Carbon Care Asia was founded by
+
+- intent: headquater_Carbon_Care_Asia
+  examples: |
+    - Headquater of Carbon Care Asia
+    - Where is the headquater of Carbon Care Asia
+    - location of Carbon Care Asia
+    - Where is Carbon Care Asia's headquater located
+    - Where is Carbon Care Asia headquater 
+    
+- intent: subsidiaries_Carbon_Care_Asia
+  examples: |
+    - Subsidiaries of Carbon Care Asia  
+    - Carbon Care Asia's Subsidiaries 
+    - Tell me the Subsidiaries of Carbon Care Asia
+
+- intent: company_desc_Airstream
+  examples: |
+    - Description of Airstream
+    - Breief Description of Airstream
+    - Details about Airstream
+    - Description of Airstream
+    - Tell me details about Airstream
+
+- intent: ceo_Airstream
+  examples: |
+    - Who is the CEO of Airstream
+    - CEO of Airstream
+    - Tell me who is the CEO of Airstream
+
+- intent: founded_on_Airstream
+  examples: |
+    - Airstream was founded on
+    - When was Airstream founded
+    - When Airstream was founded
+
+- intent: founded_by_Airstream
+  examples: |
+    - Who is the founder of Airstream
+    - founder of Airstream
+    - Airstream was founded by
+
+- intent: headquater_Airstream
+  examples: |
+    - Headquater of Airstream
+    - Where is the headquater of Airstream
+    - location of Airstream
+    - Where is Airstream's headquater located
+    - Where is Airstream headquater 
+
+- intent: subsidiaries_Airstream
+  examples: |
+    - Subsidiaries of Airstream 
+    - Airstream's Subsidiaries 
+    - Tell me the Subsidiaries of Airstream
+    
+- intent: company_desc_New_Beginning_Adoption_Agency
+  examples: |
+    - Description of New Beginning Adoption Agency
+    - Breief Description of New Beginning Adoption Agency
+    - Details about New Beginning Adoption Agency
+    - Description of New Beginning Adoption Agency
+    - Tell me details about New Beginning Adoption Agency
+
+- intent: ceo_New_Beginning_Adoption_Agency
+  examples: |
+    - Who is the CEO of New Beginning Adoption Agency
+    - CEO of New Beginning Adoption Agency
+    - Tell me who is the CEO of New Beginning Adoption Agency
+
+- intent: founded_on_New_Beginning_Adoption_Agency
+  examples: |
+    - New Beginning Adoption Agency was founded on
+    - When was New Beginning Adoption Agency founded
+    - When New Beginning Adoption Agency was founded
+
+- intent: founded_by_New_Beginning_Adoption_Agency
+  examples: |
+    - Who is the founder of New Beginning Adoption Agency
+    - founder of New Beginning Adoption Agency
+    - New Beginning Adoption Agency was founded by
+
+- intent: headquater_New_Beginning_Adoption_Agency
+  examples: |
+    - Headquater of New Beginning Adoption Agency
+    - Where is the headquater of New Beginning Adoption Agency
+    - location of New Beginning Adoption Agency
+    - Where is New Beginning Adoption Agency's headquater located
+    - Where is New Beginning Adoption Agency headquater 
+
+- intent: subsidiaries_New_Beginning_Adoption_Agency
+  examples: |
+    - Subsidiaries of New Beginning Adoption Agency
+    - New Beginning Adoption Agency's Subsidiaries 
+    - Tell me the Subsidiaries of New Beginning Adoption Agency
+
+
+- intent: company_desc_aim_your_way
+  examples: |
+    - Description of AIM Your Way
+    - Breief Description of AIM Your Way
+    - Details about AIM Your Way
+    - Description of AIM Your Way
+    - Tell me details about AIM Your Way
+
+- intent: ceo_aim_your_way
+  examples: |
+    - Who is the CEO of AIM Your Way
+    - CEO of AIM Your Way
+    - Tell me who is the CEO of AIM Your Way
+
+- intent: founded_on_aim_your_way
+  examples: |
+    - AIM Your Way was founded on
+    - When was AIM Your Way founded
+    - When AIM Your Way was founded
+
+- intent: founded_by_aim_your_way
+  examples: |
+    - Who is the founder of AIM Your Way
+    - founder of AIM Your Way
+    - AIM Your Way was founded by
+
+- intent: headquater_aim_your_way
+  examples: |
+    - Headquater of AIM Your Way
+    - Where is the headquater of AIM Your Way
+    - location of AIM Your Way
+    - Where is AIM Your Way's headquater located
+    - Where is AIM Your Way headquater
+
+- intent: subsidiaries_aim_your_way
+  examples: |
+    - Subsidiaries of AIM Your Way
+    - AIM Your Way's Subsidiaries 
+    - Tell me the Subsidiaries of AIM Your Way
+
+- intent: company_desc_safaricom
+  examples: |
+    - Description of Safaricom
+    - Breief Description of Safaricom
+    - Details about Safaricom
+    - Description of Safaricom
+    - Tell me details about Safaricom
+
+- intent: ceo_safaricom
+  examples: |
+    - Who is the CEO of Safaricom
+    - CEO of Safaricom
+    - Tell me who is the CEO of Safaricom
+
+- intent: founded_on_safaricom
+  examples: |
+    - Safaricom was founded on
+    - When was Safaricom founded
+    - When Safaricom was founded
+
+- intent: founded_by_safaricom
+  examples: |
+    - Who is the founder of Safaricom
+    - founder of Safaricom
+    - Safaricom was founded by
+
+- intent: headquater_safaricom
+  examples: |
+    - Headquater of Safaricom
+    - Where is the headquater of Safaricom
+    - location of Safaricom
+    - Where is Safaricom's headquater located
+    - Where is Safaricom headquater
+
+- intent: subsidiaries_safaricom
+  examples: |
+    - Subsidiaries of Safaricom
+    - Safaricom's Subsidiaries 
+    - Tell me the Subsidiaries of Safaricom
+
+- intent: company_desc_uniGroup
+  examples: |
+    - Description of UniGroup
+    - Breief Description of UniGroup
+    - Details about UniGroup
+    - Description of UniGroup
+    - Tell me details about UniGroup
+
+- intent: ceo_uniGroup
+  examples: |
+    - Who is the CEO of UniGroup
+    - CEO of UniGroup
+    - Tell me who is the CEO of UniGroup
+
+- intent: founded_on_uniGroup
+  examples: |
+    - UniGroup was founded on
+    - When was UniGroup founded
+    - When UniGroup was founded
+
+- intent: founded_by_uniGroup
+  examples: |
+    - Who is the founder of UniGroup
+    - founder of UniGroup
+    - UniGroup was founded by
+
+- intent: headquater_uniGroup
+  examples: |
+    - Headquater of UniGroup
+    - Where is the headquater of UniGroup
+    - location of UniGroup
+    - Where is UniGroup's headquater located
+    - Where is UniGroup headquater
+
+- intent: subsidiaries_uniGroup
+  examples: |
+    - Subsidiaries of UniGroup
+    - UniGroup's Subsidiaries 
+    - Tell me the Subsidiaries of UniGroup
+
+- intent: company_desc_coyote_logistics
+  examples: |
+    - Description of Coyote Logistics
+    - Breief Description of Coyote Logistics
+    - Details about Coyote Logistics
+    - Description of Coyote Logistics
+    - Tell me details about Coyote Logistics
+
+- intent: ceo_coyote_logistics
+  examples: |
+    - Who is the CEO of Coyote Logistics
+    - CEO of Coyote Logistics
+    - Tell me who is the CEO of Coyote Logistics
+
+- intent: founded_on_coyote_logistics
+  examples: |
+    - Coyote Logistics was founded on
+    - When was Coyote Logistics founded
+    - When Coyote Logistics was founded
+
+- intent: founded_by_coyote_logistics
+  examples: |
+    - Who is the founder of Coyote Logistics
+    - founder of Coyote Logistics
+    - Coyote Logistics was founded by
+
+- intent: headquater_coyote_logistics
+  examples: |
+    - Headquater of Coyote Logistics
+    - Where is the headquater of Coyote Logistics
+    - location of Coyote Logistics
+    - Where is Coyote Logistics's headquater located
+    - Where is Coyote Logistics headquater
+
+- intent: subsidiaries_coyote_logistics
+  examples: |
+    - Subsidiaries of Coyote Logistics
+    - Coyote Logistics's Subsidiaries 
+    - Tell me the Subsidiaries of Coyote Logistics
+
+- intent: company_desc_quickie_manufacturing_corporation
+  examples: |
+    - Description of Quickie Manufacturing Corporation
+    - Breief Description of Quickie Manufacturing Corporation
+    - Details about Quickie Manufacturing Corporation
+    - Description of Quickie Manufacturing Corporation
+    - Tell me details about Quickie Manufacturing Corporation
+
+- intent: ceo_quickie_manufacturing_corporation
+  examples: |
+    - Who is the CEO of Quickie Manufacturing Corporation
+    - CEO of Quickie Manufacturing Corporation
+    - Tell me who is the CEO of Quickie Manufacturing Corporation
+
+- intent: founded_on_quickie_manufacturing_corporation
+  examples: |
+    - Quickie Manufacturing Corporation was founded on
+    - When was Quickie Manufacturing Corporation founded
+    - When Quickie Manufacturing Corporation was founded
+
+- intent: founded_by_quickie_manufacturing_corporation
+  examples: |
+    - Who is the founder of Quickie Manufacturing Corporation
+    - founder of Quickie Manufacturing Corporation
+    - Quickie Manufacturing Corporation was founded by
+
+- intent: headquater_quickie_manufacturing_corporation
+  examples: |
+    - Headquater of Quickie Manufacturing Corporation
+    - Where is the headquater of Quickie Manufacturing Corporation
+    - location of Quickie Manufacturing Corporation
+    - Where is Quickie Manufacturing Corporation's headquater located
+    - Where is Quickie Manufacturing Corporation headquater
+
+- intent: subsidiaries_quickie_manufacturing_corporation
+  examples: |
+    - Subsidiaries of Quickie Manufacturing Corporation
+    - Quickie Manufacturing Corporation's Subsidiaries 
+    - Tell me the Subsidiaries of Quickie Manufacturing Corporation
+
+- intent: company_desc_Yahoo
+  examples: |
+    - Description of Yahoo
+    - Breief Description of Yahoo
+    - Details about Yahoo
+    - Description of Yahoo
+    - Tell me details about Yahoo
+
+- intent: ceo_Yahoo
+  examples: |
+    - Who is the CEO of Yahoo
+    - CEO of Yahoo
+    - Tell me who is the CEO of Yahoo
+
+- intent: founded_on_Yahoo
+  examples: |
+    - Yahoo was founded on
+    - When was Yahoo founded
+    - When Yahoo was founded
+
+- intent: founded_by_Yahoo
+  examples: |
+    - Who is the founder of Yahoo
+    - founder of Yahoo
+    - Yahoo was founded by
+
+- intent: headquater_Yahoo
+  examples: |
+    - Headquater of Yahoo
+    - Where is the headquater of Yahoo
+    - location of Yahoo
+    - Where is Yahoo's headquater located
+    - Where is Yahoo headquater
+
+- intent: subsidiaries_Yahoo
+  examples: |
+    - Subsidiaries of Yahoo
+    - Yahoo's Subsidiaries 
+    - Tell me the Subsidiaries of Yahoo
+
+- intent: company_desc_Walmart
+  examples: |
+    - Description of Walmart
+    - Breief Description of Walmart
+    - Details about Walmart
+    - Description of Walmart
+    - Tell me details about Walmart
+
+- intent: ceo_Walmart
+  examples: |
+    - Who is the CEO of Walmart
+    - CEO of Walmart
+    - Tell me who is the CEO of Walmart
+
+- intent: founded_on_Walmart
+  examples: |
+    - Walmart was founded on
+    - When was Walmart founded
+    - When Walmart was founded
+
+- intent: founded_by_Walmart
+  examples: |
+    - Who is the founder of Walmart
+    - founder of Walmart
+    - Walmart was founded by
+
+- intent: headquater_Walmart
+  examples: |
+    - Headquater of Walmart
+    - Where is the headquater of Walmart
+    - location of Walmart
+    - Where is Walmart's headquater located
+    - Where is Walmart headquater
+
+- intent: subsidiaries_Walmart
+  examples: |
+    - Subsidiaries of Walmart
+    - Walmart's Subsidiaries 
+    - Tell me the Subsidiaries of Walmart
+
+- intent: company_desc_Flipkart
+  examples: |
+    - Description of Flipkart
+    - Breief Description of Flipkart
+    - Details about Flipkart
+    - Description of Flipkart
+    - Tell me details about Flipkart
+
+- intent: ceo_Flipkart
+  examples: |
+    - Who is the CEO of Flipkart
+    - CEO of Flipkart
+    - Tell me who is the CEO of Flipkart
+
+- intent: founded_on_Flipkart
+  examples: |
+    - Flipkart was founded on
+    - When was Flipkart founded
+    - When Flipkart was founded
+
+- intent: founded_by_Flipkart
+  examples: |
+    - Who is the founder of Flipkart
+    - founder of Flipkart
+    - Flipkart was founded by
+
+- intent: headquater_Flipkart
+  examples: |
+    - Headquater of Flipkart
+    - Where is the headquater of Flipkart
+    - location of Flipkart
+    - Where is Flipkart's headquater located
+    - Where is Flipkart headquater
+
+- intent: subsidiaries_Flipkart
+  examples: |
+    - Subsidiaries of Flipkart
+    - Flipkart's Subsidiaries 
+    - Tell me the Subsidiaries of Flipkart
+
+- intent: company_desc_Amazon
+  examples: |
+    - Description of Amazon
+    - Breief Description of Amazon
+    - Details about Amazon
+    - Description of Amazon
+    - Tell me details about Amazon
+
+- intent: ceo_Amazon
+  examples: |
+    - Who is the CEO of Amazon
+    - CEO of Amazon
+    - Tell me who is the CEO of Amazon
+
+- intent: founded_on_Amazon
+  examples: |
+    - Amazon was founded on
+    - When was Amazon founded
+    - When Amazon was founded
+
+- intent: founded_by_Amazon
+  examples: |
+    - Who is the founder of Amazon
+    - founder of Amazon
+    - Amazon was founded by
+
+- intent: headquater_Amazon
+  examples: |
+    - Headquater of Amazon
+    - Where is the headquater of Amazon
+    - location of Amazon
+    - Where is Amazon's headquater located
+    - Where is Amazon headquater
+
+- intent: subsidiaries_Amazon
+  examples: |
+    - Subsidiaries of Amazon
+    - Amazon's Subsidiaries 
+    - Tell me the Subsidiaries of Amazon
+
+- intent: company_desc_IBM
+  examples: |
+    - Description of IBM
+    - Breief Description of IBM
+    - Details about IBM
+    - Description of IBM
+    - Tell me details about IBM
+
+- intent: ceo_IBM
+  examples: |
+    - Who is the CEO of IBM
+    - CEO of IBM
+    - Tell me who is the CEO of IBM
+
+- intent: founded_on_IBM
+  examples: |
+    - IBM was founded on
+    - When was IBM founded
+    - When IBM was founded
+
+- intent: founded_by_IBM
+  examples: |
+    - Who is the founder of IBM
+    - founder of IBM
+    - IBM was founded by
+
+- intent: headquater_IBM
+  examples: |
+    - Headquater of IBM
+    - Where is the headquater of IBM
+    - location of IBM
+    - Where is IBM's headquater located
+    - Where is IBM headquater
+
+- intent: subsidiaries_IBM
+  examples: |
+    - Subsidiaries of IBM
+    - IBM's Subsidiaries 
+    - Tell me the Subsidiaries of IBM
+
+- intent: company_desc_tcs_company
+  examples: |
+    - Description of TCS
+    - Breief Description of TCS
+    - Details about TCS
+    - Description of TCS
+    - Tell me details about TCS
+
+- intent: ceo_tcs_company
+  examples: |
+    - Who is the CEO of TCS
+    - CEO of TCS
+    - Tell me who is the CEO of TCS
+
+- intent: founded_on_tcs_company
+  examples: |
+    - TCS was founded on
+    - When was TCS founded
+    - When TCS was founded
+
+- intent: founded_by_tcs_company
+  examples: |
+    - Who is the founder of TCS
+    - founder of TCS
+    - TCS was founded by
+
+- intent: headquater_tcs_company
+  examples: |
+    - Headquater of TCS
+    - Where is the headquater of TCS
+    - location of TCS
+    - Where is TCS's headquater located
+    - Where is TCS headquater
+
+- intent: subsidiaries_tcs_company
+  examples: |
+    - Subsidiaries of TCS
+    - TCS's Subsidiaries 
+    - Tell me the Subsidiaries of TCS

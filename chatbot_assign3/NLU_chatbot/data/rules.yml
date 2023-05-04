@@ -1,0 +1,620 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'Try again'
+  steps:
+   - intent: deny
+   - action: utter_goodbye
+
+- rule: Say 'Carbon Care Asia Description'
+  steps:
+   - intent: company_desc_Carbon_Care_Asia
+   - action: utter_description_Carbon_Care_Asia
+
+- rule: Say 'Carbon Care Asia CEO'
+  steps:
+   - intent: ceo_Carbon_Care_Asia
+   - action: utter_ceo_Carbon_Care_Asia
+
+- rule: Say 'Carbon Care Asia Founded on'
+  steps:
+   - intent: founded_on_Carbon_Care_Asia
+   - action: utter_founded_on_Carbon_Care_Asia
+
+- rule: Say 'Carbon Care Asia Founded by'
+  steps:
+   - intent: founded_by_Carbon_Care_Asia
+   - action: utter_founded_by_Carbon_Care_Asia
+
+- rule: Say 'Carbon Care Asia Headquater'
+  steps:
+   - intent: headquater_Carbon_Care_Asia
+   - action: utter_headquater_Carbon_Care_Asia
+
+- rule: Say 'Droll Yankees Description'
+  steps:
+   - intent: company_desc_Droll_Yankees
+   - action: utter_description_DY
+
+- rule: Say 'Droll Yankees CEO'
+  steps:
+   - intent: ceo_Droll_Yankees
+   - action: utter_ceo_Droll_Yankees
+
+- rule: Say 'Droll Yankees Founded on'
+  steps:
+   - intent: founded_on_Droll_Yankees
+   - action: utter_founded_on_Droll_Yankees
+
+- rule: Say 'Droll Yankees Founded by'
+  steps:
+   - intent: founded_by_Droll_Yankees
+   - action: utter_founded_by_Droll_Yankees
+
+- rule: Say 'Droll Yankees Headquater'
+  steps:
+   - intent: headquater_Droll_Yankees
+   - action: utter_headquater_Droll_Yankees
+
+- rule: Say 'Mozilla Description'
+  steps:
+   - intent: company_desc_Mozilla
+   - action: utter_description_Mozilla
+
+- rule: Say 'Mozilla CEO'
+  steps:
+   - intent: ceo_Mozilla
+   - action: utter_ceo_Mozilla
+
+- rule: Say 'Mozilla Founded on'
+  steps:
+   - intent: founded_on_Mozilla
+   - action: utter_founded_on_Mozilla
+
+- rule: Say 'Mozilla Founded by'
+  steps:
+   - intent: founded_by_Mozilla
+   - action: utter_founded_by_Mozilla
+
+- rule: Say 'Mozilla Headquater'
+  steps:
+   - intent: headquater_Mozilla
+   - action: utter_headquater_Mozilla
+
+- rule: Say 'compaq computer corporation Description'
+  steps:
+   - intent: company_desc_compaq_computer_corporation
+   - action: utter_description_compaq_computer_corporation
+
+- rule: Say 'compaq computer corporation CEO'
+  steps:
+   - intent: ceo_compaq_computer_corporation
+   - action: utter_ceo_compaq_computer_corporation
+
+- rule: Say 'compaq computer corporation Founded on'
+  steps:
+   - intent: founded_on_compaq_computer_corporation
+   - action: utter_founded_on_compaq_computer_corporation
+
+- rule: Say 'compaq computer corporation Founded by'
+  steps:
+   - intent: founded_by_compaq_computer_corporation
+   - action: utter_founded_by_compaq_computer_corporation
+
+- rule: Say 'compaq computer corporation Headquater'
+  steps:
+   - intent: headquater_compaq_computer_corporation
+   - action: utter_headquater_compaq_computer_corporation
+
+- rule: Say 'Genmar Holdings Description'
+  steps:
+   - intent: company_desc_Genmar_Holdings
+   - action: utter_description_Genmar_Holdings
+
+- rule: Say 'Genmar Holdings CEO'
+  steps:
+   - intent: ceo_Genmar_Holdings
+   - action: utter_ceo_Genmar_Holdings
+
+- rule: Say 'Genmar Holdings Founded on'
+  steps:
+   - intent: founded_on_Genmar_Holdings
+   - action: utter_founded_on_Genmar_Holdings
+
+- rule: Say 'Genmar Holdings Founded by'
+  steps:
+   - intent: founded_by_Genmar_Holdings
+   - action: utter_founded_by_Genmar_Holdings
+
+- rule: Say 'Genmar Holdings Headquater'
+  steps:
+   - intent: headquater_Genmar_Holdings
+   - action: utter_headquater_Genmar_Holdings
+
+- rule: Say 'Airstream Description'
+  steps:
+   - intent: company_desc_Airstream
+   - action: utter_description_Airstream
+
+- rule: Say 'Airstream CEO'
+  steps:
+   - intent: ceo_Airstream
+   - action: utter_ceo_Airstream
+
+- rule: Say 'Airstream Founded on'
+  steps:
+   - intent: founded_on_Airstream
+   - action: utter_founded_on_Airstream
+
+- rule: Say 'Airstream Founded by'
+  steps:
+   - intent: founded_by_Airstream
+   - action: utter_founded_by_Airstream
+
+- rule: Say 'Airstream Headquater'
+  steps:
+   - intent: headquater_Airstream
+   - action: utter_headquater_Airstream
+
+- rule: Say 'New Beginning Adoption Description'
+  steps:
+   - intent: company_desc_New_Beginning_Adoption_Agency
+   - action: utter_description_New_Beginning_Adoption_Agency
+
+- rule: Say 'New Beginning Adoption CEO'
+  steps:
+   - intent: ceo_New_Beginning_Adoption_Agency
+   - action: utter_ceo_New_Beginning_Adoption_Agency
+
+- rule: Say 'New Beginning Adoption Founded on'
+  steps:
+   - intent: founded_on_New_Beginning_Adoption_Agency
+   - action: utter_founded_on_New_Beginning_Adoption_Agency
+
+- rule: Say 'New Beginning Adoption Founded by'
+  steps:
+   - intent: founded_by_New_Beginning_Adoption_Agency
+   - action: utter_founded_by_New_Beginning_Adoption_Agency
+
+- rule: Say 'New Beginning Adoption Headquater'
+  steps:
+   - intent: headquater_New_Beginning_Adoption_Agency
+   - action: utter_headquater_New_Beginning_Adoption_Agency
+
+- rule: Say 'Coyote Logistics Description'
+  steps:
+   - intent: company_desc_coyote_logistics
+   - action: utter_description_coyote_logistics
+
+- rule: Say 'Coyote Logistics CEO'
+  steps:
+   - intent: ceo_coyote_logistics
+   - action: utter_ceo_coyote_logistics
+
+- rule: Say 'Coyote Logistics Founded on'
+  steps:
+   - intent: founded_on_coyote_logistics
+   - action: utter_founded_on_coyote_logistics
+
+- rule: Say 'Coyote Logistics Founded by'
+  steps:
+   - intent: founded_by_coyote_logistics
+   - action: utter_founded_by_coyote_logistics
+
+- rule: Say 'Coyote Logistics Headquater'
+  steps:
+   - intent: headquater_coyote_logistics
+   - action: utter_headquater_coyote_logistics
+
+- rule: Say 'UniGroup Description'
+  steps:
+   - intent: company_desc_uniGroup
+   - action: utter_description_uniGroup
+
+- rule: Say 'UniGroup CEO'
+  steps:
+   - intent: ceo_uniGroup
+   - action: utter_ceo_uniGroup
+
+- rule: Say 'UniGroup Founded on'
+  steps:
+   - intent: founded_on_uniGroup
+   - action: utter_founded_on_uniGroup
+
+- rule: Say 'UniGroup Founded by'
+  steps:
+   - intent: founded_by_uniGroup
+   - action: utter_founded_by_uniGroup
+
+- rule: Say 'UniGroup Headquater'
+  steps:
+   - intent: headquater_uniGroup
+   - action: utter_headquater_uniGroup
+
+- rule: Say 'Safaricom Description'
+  steps:
+   - intent: company_desc_safaricom
+   - action: utter_description_safaricom
+
+- rule: Say 'Safaricom CEO'
+  steps:
+   - intent: ceo_safaricom
+   - action: utter_ceo_safaricom
+
+- rule: Say 'Safaricom Founded on'
+  steps:
+   - intent: founded_on_safaricom
+   - action: utter_founded_on_safaricom
+
+- rule: Say 'Safaricom Founded by'
+  steps:
+   - intent: founded_by_safaricom
+   - action: utter_founded_by_safaricom
+
+- rule: Say 'Safaricom Headquater'
+  steps:
+   - intent: headquater_safaricom
+   - action: utter_headquater_safaricom
+
+- rule: Say 'AIM Your Way Description'
+  steps:
+   - intent: company_desc_aim_your_way
+   - action: utter_description_aim_your_way
+
+- rule: Say 'AIM Your Way CEO'
+  steps:
+   - intent: ceo_aim_your_way
+   - action: utter_ceo_aim_your_way
+
+- rule: Say 'AIM Your Way Founded on'
+  steps:
+   - intent: founded_on_aim_your_way
+   - action: utter_founded_on_aim_your_way
+
+- rule: Say 'AIM Your Way Founded by'
+  steps:
+   - intent: founded_by_aim_your_way
+   - action: utter_founded_by_aim_your_way
+
+- rule: Say 'AIM Your Way Headquater'
+  steps:
+   - intent: headquater_aim_your_way
+   - action: utter_headquater_aim_your_way
+
+- rule: Say 'Quickie Manufacturing Corporation Description'
+  steps:
+   - intent: company_desc_quickie_manufacturing_corporation
+   - action: utter_description_quickie_manufacturing_corporation
+
+- rule: Say 'Quickie Manufacturing Corporation CEO'
+  steps:
+   - intent: ceo_quickie_manufacturing_corporation
+   - action: utter_ceo_quickie_manufacturing_corporation
+
+- rule: Say 'Quickie Manufacturing Corporation Founded on'
+  steps:
+   - intent: founded_on_quickie_manufacturing_corporation
+   - action: utter_founded_on_quickie_manufacturing_corporation
+
+- rule: Say 'Quickie Manufacturing Corporation Founded by'
+  steps:
+   - intent: founded_by_quickie_manufacturing_corporation
+   - action: utter_founded_by_quickie_manufacturing_corporation
+
+- rule: Say 'Quickie Manufacturing Corporation Headquater'
+  steps:
+   - intent: headquater_quickie_manufacturing_corporation
+   - action: utter_headquater_quickie_manufacturing_corporation
+
+- rule: Say 'Google Description'
+  steps:
+   - intent: company_desc_google
+   - action: utter_description_google
+
+- rule: Say 'Google CEO'
+  steps:
+   - intent: ceo_google
+   - action: utter_ceo_google
+
+- rule: Say 'Google Founded on'
+  steps:
+   - intent: founded_on_google
+   - action: utter_founded_on_google
+
+- rule: Say 'Google Founded by'
+  steps:
+   - intent: founded_by_google
+   - action: utter_founded_by_google
+
+- rule: Say 'Google Headquater'
+  steps:
+   - intent: headquater_google
+   - action: utter_headquater_google
+
+- rule: Say 'Facebook Description'
+  steps:
+   - intent: company_desc_facebook
+   - action: utter_description_facebook
+
+- rule: Say 'Facebook CEO'
+  steps:
+   - intent: ceo_facebook
+   - action: utter_ceo_facebook
+
+- rule: Say 'Facebook Founded on'
+  steps:
+   - intent: founded_on_facebook
+   - action: utter_founded_on_facebook
+
+- rule: Say 'Facebook Founded by'
+  steps:
+   - intent: founded_by_facebook
+   - action: utter_founded_by_facebook
+
+- rule: Say 'Facebook Headquater'
+  steps:
+   - intent: headquater_facebook
+   - action: utter_headquater_facebook
+
+- rule: Say 'tcs company Description'
+  steps:
+   - intent: company_desc_tcs_company
+   - action: utter_description_tcs_company
+
+- rule: Say 'tcs company CEO'
+  steps:
+   - intent: ceo_tcs_company
+   - action: utter_ceo_tcs_company
+
+- rule: Say 'tcs company Founded on'
+  steps:
+   - intent: founded_on_tcs_company
+   - action: utter_founded_on_tcs_company
+
+- rule: Say 'tcs company Founded by'
+  steps:
+   - intent: founded_by_tcs_company
+   - action: utter_founded_by_tcs_company
+
+- rule: Say 'tcs company Headquater'
+  steps:
+   - intent: headquater_tcs_company
+   - action: utter_headquater_tcs_company
+
+- rule: Say 'tcs company Subsidiaries'
+  steps:
+   - intent: subsidiaries_tcs_company
+   - action: utter_subsidiaries_tcs_company
+
+
+- rule: Say 'Walmart Description'
+  steps:
+   - intent: company_desc_Walmart
+   - action: utter_description_Walmart
+
+- rule: Say 'Walmart CEO'
+  steps:
+   - intent: ceo_Walmart
+   - action: utter_ceo_Walmart
+
+- rule: Say 'Walmart Founded on'
+  steps:
+   - intent: founded_on_Walmart
+   - action: utter_founded_on_Walmart
+
+- rule: Say 'Walmart Founded by'
+  steps:
+   - intent: founded_by_Walmart
+   - action: utter_founded_by_Walmart
+
+- rule: Say 'Walmart Headquater'
+  steps:
+   - intent: headquater_Walmart
+   - action: utter_headquater_Walmart
+
+- rule: Say 'Walmart Subsidiaries'
+  steps:
+   - intent: subsidiaries_Walmart
+   - action: utter_subsidiaries_Walmart
+
+- rule: Say 'Yahoo Description'
+  steps:
+   - intent: company_desc_Yahoo
+   - action: utter_description_Yahoo
+
+- rule: Say 'Yahoo CEO'
+  steps:
+   - intent: ceo_Yahoo
+   - action: utter_ceo_Yahoo
+
+- rule: Say 'Yahoo Founded on'
+  steps:
+   - intent: founded_on_Yahoo
+   - action: utter_founded_on_Yahoo
+
+- rule: Say 'Yahoo Founded by'
+  steps:
+   - intent: founded_by_Yahoo
+   - action: utter_founded_by_Yahoo
+
+- rule: Say 'Yahoo Headquater'
+  steps:
+   - intent: headquater_Yahoo
+   - action: utter_headquater_Yahoo
+
+- rule: Say 'Yahoo Subsidiaries'
+  steps:
+   - intent: subsidiaries_Yahoo
+   - action: utter_subsidiaries_Yahoo
+
+- rule: Say 'IBM Description'
+  steps:
+   - intent: company_desc_IBM
+   - action: utter_description_IBM
+
+- rule: Say 'IBM CEO'
+  steps:
+   - intent: ceo_IBM
+   - action: utter_ceo_IBM
+
+- rule: Say 'IBM Founded on'
+  steps:
+   - intent: founded_on_IBM
+   - action: utter_founded_on_IBM
+
+- rule: Say 'IBM Founded by'
+  steps:
+   - intent: founded_by_IBM
+   - action: utter_founded_by_IBM
+
+- rule: Say 'IBM Headquater'
+  steps:
+   - intent: headquater_IBM
+   - action: utter_headquater_IBM
+
+- rule: Say 'IBM Subsidiaries'
+  steps:
+   - intent: subsidiaries_IBM
+   - action: utter_subsidiaries_IBM
+
+- rule: Say 'Amazon Description'
+  steps:
+   - intent: company_desc_Amazon
+   - action: utter_description_Amazon
+
+- rule: Say 'Amazon CEO'
+  steps:
+   - intent: ceo_Amazon
+   - action: utter_ceo_Amazon
+
+- rule: Say 'Amazon Founded on'
+  steps:
+   - intent: founded_on_Amazon
+   - action: utter_founded_on_Amazon
+
+- rule: Say 'Amazon Founded by'
+  steps:
+   - intent: founded_by_Amazon
+   - action: utter_founded_by_Amazon
+
+- rule: Say 'Amazon Headquater'
+  steps:
+   - intent: headquater_Amazon
+   - action: utter_headquater_Amazon
+
+- rule: Say 'Amazon Subsidiaries'
+  steps:
+   - intent: subsidiaries_Amazon
+   - action: utter_subsidiaries_Amazon
+- rule: Say 'Flipkart Description'
+  steps:
+   - intent: company_desc_Flipkart
+   - action: utter_description_Flipkart
+
+- rule: Say 'Flipkart CEO'
+  steps:
+   - intent: ceo_Flipkart
+   - action: utter_ceo_Flipkart
+
+- rule: Say 'Flipkart Founded on'
+  steps:
+   - intent: founded_on_Flipkart
+   - action: utter_founded_on_Flipkart
+
+- rule: Say 'Flipkart Founded by'
+  steps:
+   - intent: founded_by_Flipkart
+   - action: utter_founded_by_Flipkart
+
+- rule: Say 'Flipkart Headquater'
+  steps:
+   - intent: headquater_Flipkart
+   - action: utter_headquater_Flipkart
+
+- rule: Say 'Flipkart Subsidiaries'
+  steps:
+   - intent: subsidiaries_Flipkart
+   - action: utter_subsidiaries_Flipkart
+
+- rule: Say 'Carbon Care Asia Subsidiaries'
+  steps:
+   - intent: subsidiaries_Carbon_Care_Asia
+   - action: utter_subsidiaries_Carbon_Care_Asia
+
+- rule: Say 'Droll Yankees Subsidiaries'
+  steps:
+   - intent: subsidiaries_Droll_Yankees
+   - action: utter_subsidiaries_Droll_Yankees
+
+- rule: Say 'Mozilla Subsidiaries'
+  steps:
+   - intent: subsidiaries_Mozilla
+   - action: utter_subsidiaries_Mozilla
+
+- rule: Say 'compaq computer corporation Subsidiaries'
+  steps:
+   - intent: subsidiaries_compaq_computer_corporation
+   - action: utter_subsidiaries_compaq_computer_corporation
+
+- rule: Say 'Genmar Holdings Subsidiaries'
+  steps:
+   - intent: subsidiaries_Genmar_Holdings
+   - action: utter_subsidiaries_Genmar_Holdings
+
+- rule: Say 'Airstream Subsidiaries'
+  steps:
+   - intent: subsidiaries_Airstream
+   - action: utter_subsidiaries_Airstream
+
+- rule: Say 'New Beginning Adoption Subsidiaries'
+  steps:
+   - intent: subsidiaries_New_Beginning_Adoption_Agency
+   - action: utter_subsidiaries_New_Beginning_Adoption_Agency
+
+- rule: Say 'Coyote Logistics Subsidiaries'
+  steps:
+   - intent: subsidiaries_coyote_logistics
+   - action: utter_subsidiaries_coyote_logistics
+
+- rule: Say 'UniGroup Subsidiaries'
+  steps:
+   - intent: subsidiaries_uniGroup
+   - action: utter_subsidiaries_uniGroup
+
+- rule: Say 'Safaricom Subsidiaries'
+  steps:
+   - intent: subsidiaries_safaricom
+   - action: utter_subsidiaries_safaricom
+
+- rule: Say 'AIM Your Way Subsidiaries'
+  steps:
+   - intent: subsidiaries_aim_your_way
+   - action: utter_subsidiaries_aim_your_way
+
+- rule: Say 'Quickie Manufacturing Corporation Subsidiaries'
+  steps:
+   - intent: subsidiaries_quickie_manufacturing_corporation
+   - action: utter_subsidiaries_quickie_manufacturing_corporation
+
+- rule: Say 'Google Subsidiaries'
+  steps:
+   - intent: subsidiaries_google
+   - action: utter_subsidiaries_google
+
+- rule: Say 'Facebook Subsidiaries'
+  steps:
+   - intent: subsidiaries_facebook
+   - action: utter_subsidiaries_facebook
+
+
